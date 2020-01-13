@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>aforismov</title>
+		<link rel="icon" type="image/png" size="16" href="/favicon.png">
+		<style>
+			body {
+				margin: 0;
+				background: #000;
+			}
+			.wrap {
+				width: 100vw;
+				height: 100vh;
+			}
+			.back {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				background-image: url(map.jpg);
+				animation: lara 15s linear infinite;
+				box-shadow: inset 0px 0px 40px 4px #000;
+			}
+			.grad {
+				width: 100%;
+				height: 100%;
+				background-image: linear-gradient(0deg, #000 15%, transparent 60%);
+			}
+			.content {
+				position: relative;
+				width: 1200px;
+				max-width: 100%;
+				margin: 0 auto;
+			}
+			h1 {
+				margin: 0;
+				text-align: center;
+				padding-top: 20vh;
+				font-family: monospace;
+				font-size: 32px;
+				font-weight: 400;
+				color: #fff;
+			}
+			@keyframes lara {
+				0% {
+					opacity: 0;
+					background-position: left 0px top 0px;
+				}
+				5% {opacity: 0; filter: brightness(1) blur(2px)}
+				10% {opacity: .2; filter: brightness(1) blur(3px)}
+				20% {opacity: .6; filter: brightness(2) blur(0px)}
+				30% {opacity: .3; filter: brightness(1) blur(0px)}
+				40% {opacity: .8;}
+				50% {opacity: .2;}
+				60% {opacity: .6;}
+				69.99999% {filter: brightness(1) blur(0px)}
+				70% {opacity: .1; filter: brightness(1) blur(1px)}
+				80% {opacity: .8; filter: brightness(2) blur(4px)}
+				90% {opacity: .7; filter: brightness(1) blur(2px)}
+				100% {
+					opacity: 0;
+					background-position: left -400px top -400px;
+					filter: brightness(1) blur(0px);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="back">
+				<div class="grad"></div>
+			</div>
+			<div class="content">
+				<h1>aforismov</h1>
+			</div>
+		</div>
+	</body>
+</html>
